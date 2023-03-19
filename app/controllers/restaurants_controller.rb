@@ -8,7 +8,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :record_error
     end
 
     def show
-        render json: get_by_id, except: [:created_at,:updated_at]
+        render json: get_by_id, except: [:created_at,:updated_at], include:[pizzas:{except: [:created_at,:updated_at]}]
     end
 
     def create
