@@ -75,6 +75,19 @@ The api should have the following routes:
 {
   "errors": ["validation errors"]
 }
+## Development and Status
+
+This application was developed using the following technologies:
+-  [Ruby](https://www.ruby-lang.org/en/)
+-  [Ruby on Rails](https://rubyonrails.org/)
+
+Status: Maintained
+
+## Author and Licence
+
+Author:[chris-wamae](https://github.com/chris-wamae)
+
+Licence: MIT Licence
 
 
   
