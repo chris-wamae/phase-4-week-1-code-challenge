@@ -75,6 +75,21 @@ The api should have the following routes:
 {
   "errors": ["validation errors"]
 }
+
+## Application usage
+### Dependancies
+For the appication to work  the following must be installed on your local machine:
+- ruby 
+- bundler 
+- ruby on rails
+### Usage
+After ensuring that the dependancies are installed and working,follow these steps to get the appliction up and running:
+- fork and clone this repository into your local machine
+- open a terminal session in the directory where the app is contained and run the command: **bundle install** 
+- after the gems are installs run the command **rails server**
+- follow the generated link to access the application
+- the application can also  be accessed in a console from the terminal by running **rails console**
+
 ## Development and Status
 
 This application was developed using the following technologies:
