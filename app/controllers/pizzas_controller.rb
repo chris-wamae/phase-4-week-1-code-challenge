@@ -3,12 +3,12 @@ class PizzasController < ApplicationController
 
     def index
      all_pizzas = Pizza.all
-     render json: all_pizzas
+     render json: all_pizzas,except: [:created_at,:updated_at]
     end
 
     def create 
     new_pizza = Pizza.create(allow_params)
-    render json: new_pizza
+    render json: new_pizza, except: [:created_at,:updated_at]
     end
 
     private 

@@ -9,7 +9,7 @@ class RestaurantPizzasController < ApplicationController
     Restaurant.find(params[:restaurant_id])
     new_restaurant_pizza = RestaurantPizza.create(allowed_params)
     if new_restaurant_pizza.valid?
-    render json: new_restaurant_pizza
+    render json: new_restaurant_pizza.pizza, except: [:created_at,:updated_at]
     else
     render json: {error:"Validation errors"}, status:422
     end

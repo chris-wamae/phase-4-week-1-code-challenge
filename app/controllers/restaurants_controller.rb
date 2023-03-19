@@ -4,16 +4,16 @@ rescue_from ActiveRecord::RecordNotFound, with: :record_error
 
     def index
         all_restaurants = Restaurant.all
-        render json: all_restaurants
+        render json: all_restaurants, except: [:created_at,:updated_at]
     end
 
     def show
-        render json: get_by_id
+        render json: get_by_id, except: [:created_at,:updated_at]
     end
 
     def create
         new_restaurant = Restaurant.create!(allowed_params)
-        render json: new_restaurant
+        render json: new_restaurant, except: [:created_at,:updated_at]
     end
 
     def destroy
