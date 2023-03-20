@@ -1,5 +1,11 @@
 # phase-4-week-1-code-challenge
 This is an an API for tracking pizzas restaurants.
+
+## Deployed Application 
+
+This is application has been deployed on render and is available through the following link:
+- https://pizzas-code-challenge.onrender.com/
+
 ## Application behaviour(BDD)
 The api should have the following routes:
 1. GET /restaurants
